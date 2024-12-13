@@ -1,7 +1,8 @@
 {
   "name": "vrt-atomic-boilerplate",
   "private": true,
-  "version": "0.0.0",
+  "author": "Germano Gomes",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
