@@ -27,9 +27,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
           <AnchorAtom 
           className="hover:underline"
           text="Registre sua conta" href="/register" />
-          <ButtonAtom 
-          text="Ativar sua conta" onClick={ () => {} } />
-          <label className="text-sm">&#169; 2024 <b>Didakta</b> - Todos os direitos reservados</label>
         </div>
       }
     >
