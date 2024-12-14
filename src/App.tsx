@@ -1,11 +1,29 @@
-import './App.css'
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { lazy } from 'react';
 
-function App() {
+const routes = [
+  { path: "/", component: lazy(() => import("./components/pages/boilerplate")) },
+  { path: "/login", component: lazy(() => import("./components/pages/login")) },
+  { path: "/register", component: lazy(() => import("./components/pages/register")) },
+]
+
+const App: React.FC = () => {
   return (
-    <div className="w-full h-screen pt-10
-    flex items-start justify-center">
-      <label className="text-4xl font-bold">Welcome to the Boilerplate</label>
-    </div>
+    <Router>
+      {/* TODO: create an animated component for loading page */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          { routes.map((route, index) => {
+            return <Route
+            key={ `route-${index}` }
+            path={ route.path }
+            element={ <route.component /> } 
+            />
+          }) }
+        </Routes>
+      </Suspense>
+    </Router>
   )
 }
 
