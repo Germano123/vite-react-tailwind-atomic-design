@@ -8,3 +8,5 @@ const BoilerplatePage: React.FC = () => {
     </div>
   )
 }
+
+export default BoilerplatePage;
