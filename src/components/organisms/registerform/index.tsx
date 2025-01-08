@@ -24,7 +24,7 @@ const RegisterFormOrganism: React.FC<RegisterFormOrganismProps> = ({ onRegister 
       submitText="Registrar"
       footer={
         <div className="flex flex-col items-center gap-2">
-          <label className="text-sm">&#169; 2024 <b>Didakta</b> - Todos os direitos reservados</label>
+          <label className="text-sm">&#169; 2024 <b>Project</b> - Todos os direitos reservados</label>
         </div>
       }
     >
