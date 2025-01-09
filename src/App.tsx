@@ -21,6 +21,8 @@ const App: React.FC = () => {
                 <route.component />
               )
             }
+            />
+          }) }
         </Routes>
       </Suspense>
     </Router>
