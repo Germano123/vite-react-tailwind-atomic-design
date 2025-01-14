@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import FormField from "../../molecules/formfield";
 import AnchorAtom from "../../atoms/anchor";
 import FormOrganism from "../form";
-import ButtonAtom from "../../atoms/button";
 import { LoginCredentials } from "../../../services/auth/auth.usecase";
+import { FormFooter } from "../../molecules/formfooter";
 
 interface LoginFormProps {
   onLogin: (credentials: LoginCredentials) => void;
@@ -27,6 +27,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
           <AnchorAtom 
           className="hover:underline"
           text="Registre sua conta" href="/register" />
+          <FormFooter />
         </div>
       }
     >
