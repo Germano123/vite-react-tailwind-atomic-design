@@ -7,12 +7,12 @@ export const routes = [
   },
   {
     path: "/home",
-    component: lazy(() => import("./components/pages/boileplate")),
+    component: lazy(() => import("./components/pages/boilerplate")),
     layout: lazy(() => import("./components/templates/defaultlayout"))
   },
   {
-    path: "/dashboard",
-    component: lazy(() => import("./components/pages/dashboard")),
+    path: "/register",
+    component: lazy(() => import("./components/pages/register")),
     layout: lazy(() => import("./components/templates/defaultlayout"))
   },
 ];
