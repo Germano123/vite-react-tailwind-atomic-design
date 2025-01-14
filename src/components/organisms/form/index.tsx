@@ -12,7 +12,7 @@ const FormOrganism: React.FC<FormOrganismProps> = ({ onSubmit, children, submitT
   return (
     <form onSubmit={onSubmit} className="relative flex flex-col p-6">
       { children }
-      <ButtonAtom text={submitText} onClick={() => {}} color="primary" />
+      <ButtonAtom size="full" text={submitText} onClick={() => {}} color="primary" />
       { footer && <div className="mt-4">{ footer }</div>}
     </form>
   );
