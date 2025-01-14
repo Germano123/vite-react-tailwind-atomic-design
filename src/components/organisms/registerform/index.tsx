@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormField from "../../molecules/formfield";
 import FormOrganism from "../form";
 import { RegisterCredentials } from "../../../services/auth/auth.usecase";
+import { FormFooter } from "../../molecules/formfooter";
 
 interface RegisterFormOrganismProps {
   onRegister: (credentials: RegisterCredentials) => void;
@@ -23,9 +24,7 @@ const RegisterFormOrganism: React.FC<RegisterFormOrganismProps> = ({ onRegister 
       onSubmit={handleSubmit}
       submitText="Registrar"
       footer={
-        <div className="flex flex-col items-center gap-2">
-          <label className="text-sm">&#169; 2024 <b>Project</b> - Todos os direitos reservados</label>
-        </div>
+        <FormFooter />
       }
     >
         
